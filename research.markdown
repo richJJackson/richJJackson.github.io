@@ -4,13 +4,13 @@ title: Research
 permalink: /research/
 ---
 
-# Personalised Synthetic Controls
+## Personalised Synthetic Controls
 
 The use of statistical (parametric) models to act as counter-factual evidence
 in the estimation of treatment effects.  See the [psc.r](https://github.com/richJJackson/psc)
-package for more detils
+package for more detils or lean more at [cfmodles](https://richjjackson.github.io/cfmodels/)
 
-# Idenfication of predictive markers
+## Idenfication of predictive markers
 
 Looking at developing tools to make it easier to detect predictive biomarkers in
 
