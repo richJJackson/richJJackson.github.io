@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Potential Outcomes"
+title:  "Potential Outcomes Explained"
 date: 2025-01-09
 categories: jekyll update
 ---
