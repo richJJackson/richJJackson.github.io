@@ -34,12 +34,12 @@ As soon as one treatment is given this decision is made and we then know which p
 
 For convenience lets assume there are no issues in actually delivering the treatment - we now have two subtle but important changes:
 
-1. Patients no longer have potential outcomes but observed outcomes.  We'll simply call this $y$ to distinguish this a single observed value
+1. Patients no longer have potential outcomes but observed outcomes.  We'll simply call this y to distinguish this a single observed value
 2. These outcomes are conditional on what treatment a patient had
 
 This first point is key I think, one of the earliest mental blocks I had in understanding potential outcomes was understanding the difference between 'potential' and 'observed' outcomes.
 
-The second point means that in mathematical terms we now have y|A=0 and y|A=0.  We can (and do!) still compare these outcomes.  We could write it like this:
+The second point means that in mathematical terms we now have $`y|A=0`$ and $`y|A=0`$.  We can (and do!) still compare these outcomes.  We could write it like this:
 
 $$
 d = [y|A=0] -  [y|A=1] 
