@@ -39,7 +39,7 @@ For convenience lets assume there are no issues in actually delivering the treat
 
 This first point is key I think, one of the earliest mental blocks I had in understanding potential outcomes was understanding the difference between 'potential' and 'observed' outcomes.
 
-The second point means that in mathematical terms we now have $y|A=0$ and $y|A=0$.  We can (and do!) still compare these outcomes.  We could write it like this:
+The second point means that in mathematical terms we now have y|A=0 and y|A=0.  We can (and do!) still compare these outcomes.  We could write it like this:
 
 $$
 d = [y|A=0] -  [y|A=1] 
