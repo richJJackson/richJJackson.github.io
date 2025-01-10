@@ -7,6 +7,9 @@ topmenu:
 - title: About
   url: "about/"
 
+- title: Research
+  url: "research/"
+
 - title: Contact
   url: "contact/"
 
