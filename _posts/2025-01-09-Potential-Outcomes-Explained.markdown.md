@@ -2,7 +2,8 @@
 layout: post
 title:  "Potential Outcomes Explained"
 date: 2025-01-09
-categories: jekyll update
+categories: [causal inference]
+image: assets/images/potOut_fig1.png
 ---
 
 
@@ -12,7 +13,7 @@ You may well have heard something along the lines of "Correlation does not imply
 
 So how do we get from correlation to causation?? To understand this, we need to understand potential outcomes.  Lets say we have a single patient who is about to be delivered one of two treatments and at some point following the treatment we can measure their outcome.  Our imaginary patients path will look something like this
 
-![potOut_fig1](/assets/potOut_fig1.png)
+![potOut_fig1](/assets/images/potOut_fig1.png)
 
 We call out treatment assignment 'A' which can take two values; A=0 for the control treatment and A=1 for the experimental treatment.  
 
@@ -22,7 +23,7 @@ Our patients outcome is Y.  The main principle of understanding potential outcom
 
 This, slightly confused patient, is what we will use to represent a patient with both potential outcomes before they have received any treatment.
 
-![potOut_fig2](/assets/potOut_fig2.png)
+![potOut_fig2](/assets/images/potOut_fig2.png)
 
 If we want to understand which treatment works, ideally we would like to measure Y(0) and Y(1) and estimate their difference; say d = Y(1) - Y(0).  This is our causal estimate and exactly what we are after with the slight hiccup that it is impossible. Oh well - plan B.
 
@@ -30,7 +31,7 @@ In practice one outcome will be observed and and the other will remain unseen an
 
 As soon as one treatment is given this decision is made and we then know which patient we have, a Y(0) patient or a Y(1) patient.  The mechanics of *how* this decision is made govern much about the causal inference tools we need to use but more about that some other time.
 
-![potOut_fig3](/assets/potOut_fig3.png)
+![potOut_fig3](/assets/images/potOut_fig3.png)
 
 For convenience lets assume there are no issues in actually delivering the treatment - we now have two subtle but important changes:
 
@@ -63,7 +64,7 @@ Thankfully these are in no way confusing or convoluted..... Lets start:
 
 My first reaction to reading this was rather bland ("Well obviously").  Why would one patient having a treatment effect in anyway the potential of another patient.  In many cases this is perfectly reasonable.  Where patients are entirely independent certainly (e.g. in different countries).  Even where two patients are placed on the same hospital, treating one patient usually won't impact the potential outcome of another.   
 
-![potOut_fig4](/assets/potOut_fig4.png)
+![potOut_fig4](/assets/images/potOut_fig4.png)
 
 Where this may fall down is in the evaluation of vaccine.  If the treatment is vaccine vs no vaccine and the outcome is getting some infection then one patient being vaccinated may impact the likelihood of another patient getting infected....
 
@@ -73,7 +74,7 @@ Where this may fall down is in the evaluation of vaccine.  If the treatment is v
 
 To me I think of the potential outcome [Y(0) and Y(1)] as being set in stone. E.g. they don't depend on the treatment a patient is given and because of this, we could theoretically *exchange* patients between the two treatment groups and arrive at the same inference. 
 
-![potOut_fig5](/assets/potOut_fig5.png)
+![potOut_fig5](/assets/images/potOut_fig5.png)
 
 Importantly in mathematical terms this allows us to write things like
 
@@ -89,7 +90,7 @@ I.e the potential outcome for the control treatment [Y(0)] stays the same.  If t
 This says that if a patients is allocated to receive a control treatment the observed outcome [Y(0)] that we see is the same as the potential outcome.  E.G. the act of giving the treatment has not changed the potential outcome, it is 'consistent'.
 
 
-![potOut_fig6](/assets/potOut_fig6.png)
+![potOut_fig6](/assets/images/potOut_fig6.png)
 
 
 Mathematically this allows us to say
